@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#managed-campgrounds-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 75%;
+    min-width: 30%;
+    border: 1px solid black;
+}
+
+#managed-campgrounds {
+    display: flex;
+    flex: row;
+    justify-content: left;
+    overflow-x: scroll;
+    max-width: 75%;
+}
+
+.campground-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px black solid;
+    border-radius: 0.2rem;
+    height: fit-content;
+    width: 8rem;
+}
+
+.campground-item h2, .campground-item h3, .campground-item p {
+    margin: 0.25rem 0rem;
+}
+
+.campground-item footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.campground-item footer button {
+    height: 1.5rem;
+    width: 5rem;
+}
+
+.campground-description-edit-textarea {
+    display: none;
+    width: 100%;
+    margin: 0.25rem;
+}
+
+#new-campground-form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.submit-button {
+    background-color: yellowgreen;
+    border: 1px black solid;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
+#managed-reservations-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#managed-reservations {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    border: 1px solid black;
+    align-items:flex-start;
+    justify-content: center;
+    padding: 1rem;
+    overflow-x: scroll;
+}
+
+.reservation-item {
+    border: 1px solid black;
+    margin: 0rem 2rem;
+    padding: 1rem;
+    max-width: 10rem;
+}

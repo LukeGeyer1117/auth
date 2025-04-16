@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - host</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="../login/index.html">Sign Out</a>
+    <div id="managed-campgrounds-holder">
+        <h1>My Campgrounds</h1>
+        <div id="managed-campgrounds"></div>
+    </div>
+    <form id="new-campground-form" action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="address">Street Address:</label>
+        <input type="text" id="address" name="address" required>
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" required>
+        <button type="submit" id="create-campground-button" class="submit-button">Add a new Campground</button>
+    </form>
+    <div id="managed-reservations-holder">
+        <h1>Reservations to my Campgrounds</h1>
+        <div id="managed-reservations">No Reservations to your campgrounds!</div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>
